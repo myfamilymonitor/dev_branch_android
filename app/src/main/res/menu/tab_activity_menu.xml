@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_change_to_english"
+        android:icon="@mipmap/menu_log_out"
+        android:orderInCategory="101"
+        android:title="@string/log_out"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_change_to_hindi"
+        android:icon="@mipmap/menu_log_out"
+        android:orderInCategory="102"
+        android:title="@string/log_out"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@mipmap/menu_log_out"
+        android:orderInCategory="103"
+        android:title="@string/log_out"
+        app:showAsAction="never" />
+
+</menu>

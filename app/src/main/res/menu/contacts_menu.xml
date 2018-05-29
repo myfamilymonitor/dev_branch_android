@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_done"
+        android:icon="@mipmap/done_imv"
+        android:orderInCategory="102"
+        app:showAsAction="ifRoom"
+        android:title="@string/complete" />
+
+    <item
+        android:id="@+id/action_check_box"
+        android:icon="@android:drawable/checkbox_off_background"
+        android:orderInCategory="103"
+        app:showAsAction="ifRoom"
+        android:checkable="true"
+        android:title="@string/check_box" />
+
+</menu>

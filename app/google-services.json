@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "712705953922",
+    "firebase_url": "https://myfamily-monitor.firebaseio.com",
+    "project_id": "myfamily-monitor",
+    "storage_bucket": "myfamily-monitor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712705953922:android:5fda26d79d6ae339",
+        "android_client_info": {
+          "package_name": "com.myfamilymonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712705953922-o2puee7sa5drg42a4atjj16ock79ksba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myfamilymonitor",
+            "certificate_hash": "617856199f8a3e14df4b79a0d6fec2948cc2b339"
+          }
+        },
+        {
+          "client_id": "712705953922-h6dd4ceut89ujf65kojaqvqi87fq4k39.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "712705953922-h6dd4ceut89ujf65kojaqvqi87fq4k39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT38U2BzuMZLenpDcpdkvAhcMX2C6d3Vw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712705953922-h6dd4ceut89ujf65kojaqvqi87fq4k39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
