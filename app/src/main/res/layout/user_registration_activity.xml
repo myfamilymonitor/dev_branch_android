@@ -1,289 +1,376 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/image_IMV"
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/app_name"
-        android:src="@drawable/my_family" />
+        android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/account_info_LL"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/image_IMV"
-        android:orientation="vertical"
-        android:visibility="gone">
-
-
-        <TextView
-            android:id="@+id/account_TV"
+        <ImageView
+            android:id="@+id/image_IMV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:gravity="center"
-            android:text="@string/do_u_have_account"
-            android:textColor="@color/white" />
-
-        <Button
-            android:id="@+id/yes_BTN"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/rounded_corner_button"
-            android:text="@string/yes" />
-
-        <Button
-            android:id="@+id/no_BTN"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/rounded_corner_button"
-            android:text="@string/no" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/account_type_LL"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/image_IMV"
-        android:orientation="vertical"
-        android:visibility="gone">
-
-
-        <TextView
-            android:id="@+id/here_as_TV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:gravity="center"
-            android:text="@string/here_as"
-            android:textColor="@color/white" />
-
-        <Button
-            android:id="@+id/parent_BTN"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/rounded_corner_button"
-            android:text="@string/parent" />
-
-        <Button
-            android:id="@+id/child_BTN"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/rounded_corner_button"
-            android:text="@string/child" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/register_parent_LL"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/image_IMV"
-        android:background="@color/colorPrimaryLight"
-        android:orientation="vertical"
-        android:visibility="gone">
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            app:hintTextAppearance="@style/MyAppearance">
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/my_family" />
 
-            <EditText
-                android:id="@+id/parent_register_email_ET"
+        <LinearLayout
+            android:id="@+id/account_info_LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/image_IMV"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/account_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="@string/do_u_have_account"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/yes_BTN"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_corner_button"
+                android:text="@string/yes" />
+
+            <Button
+                android:id="@+id/no_BTN"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_corner_button"
+                android:text="@string/no" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/account_type_LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/image_IMV"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/here_as_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="@string/here_as"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/parent_BTN"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_corner_button"
+                android:text="@string/parent" />
+
+            <Button
+                android:id="@+id/child_BTN"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_corner_button"
+                android:text="@string/child" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/register_parent_LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/image_IMV"
+            android:background="@color/colorPrimaryLight"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hintTextAppearance="@style/MyAppearance">
+
+                <EditText
+                    android:id="@+id/parent_register_email_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fab_margin"
+                    tools:ignore="LabelFor" />
+
+                <requestFocus />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/parent_register_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/phone_hint"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+            <com.lamudi.phonefield.PhoneEditText
+                android:id="@+id/parent_register_ph_no_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hintTextAppearance="@style/MyAppearance">
+
+                <EditText
+                    android:id="@+id/parent_register_password_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="@string/password_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <requestFocus />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hintTextAppearance="@style/MyAppearance">
+
+                <EditText
+                    android:id="@+id/parent_register_re_enter_password_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="@string/re_enter_password"
+                    android:inputType="textPassword"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <requestFocus />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/register_parent_BTN"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corner_button"
+                android:text="@string/register" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/already_registered_parent_LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/image_IMV"
+            android:background="@drawable/rounded_corner_button"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hintTextAppearance="@style/MyAppearance">
+
+                <EditText
+                    android:id="@+id/already_register_email_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fab_margin"
+                    tools:ignore="LabelFor" />
+
+                <requestFocus />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hintTextAppearance="@style/MyAppearance">
+
+                <EditText
+                    android:id="@+id/already_register_password_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="@string/password_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <requestFocus />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/already_register_parent_BTN"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corner_button"
+                android:text="@string/login" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/register_child_LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/image_IMV"
+            android:background="@color/colorPrimaryLight"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hintTextAppearance="@style/MyAppearance">
+
+                <EditText
+                    android:id="@+id/child_register_email_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fab_margin"
+                    tools:ignore="LabelFor" />
+
+                <requestFocus />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/child_parent_ph_register_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/phone_hint_parent"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+            <com.lamudi.phonefield.PhoneEditText
+                android:id="@+id/child_register_parent_ph_no_ET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:hint="@string/email_hint"
-                android:inputType="textEmailAddress"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textSize="@dimen/fab_margin"
-                tools:ignore="LabelFor" />
-
-            <requestFocus />
-        </android.support.design.widget.TextInputLayout>
-
-
-        <TextView
-            android:id="@+id/parent_register_TV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/phone_hint"
-            android:textColor="@color/colorPrimaryDark" />
-
-
-        <com.lamudi.phonefield.PhoneEditText
-            android:id="@+id/parent_register_ph_no_ET"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp" />
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            app:hintTextAppearance="@style/MyAppearance">
-
-            <EditText
-                android:id="@+id/parent_register_password_ET"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:hint="@string/password_hint"
-                android:inputType="textPassword"
                 android:maxLength="10"
-                android:singleLine="true"
-                android:textSize="@dimen/edit_text_size" />
+                android:singleLine="true" />
 
-            <requestFocus />
-        </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/child_register_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/phone_hint"
+                android:textColor="@color/colorPrimaryDark" />
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            app:hintTextAppearance="@style/MyAppearance">
-
-            <EditText
-                android:id="@+id/parent_register_re_enter_password_ET"
+            <com.lamudi.phonefield.PhoneEditText
+                android:id="@+id/child_register_ph_no_ET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:hint="@string/re_enter_password"
-                android:inputType="textPassword"
                 android:maxLength="10"
-                android:singleLine="true"
-                android:textSize="@dimen/edit_text_size" />
+                android:singleLine="true" />
 
-            <requestFocus />
-        </android.support.design.widget.TextInputLayout>
-
-        <Button
-            android:id="@+id/register_parent_BTN"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/rounded_corner_button"
-            android:text="@string/register" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/register_child_LL"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/image_IMV"
-        android:background="@color/colorPrimaryLight"
-        android:orientation="vertical"
-        android:visibility="gone">
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            app:hintTextAppearance="@style/MyAppearance">
-
-            <EditText
-                android:id="@+id/child_register_email_ET"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/email_hint"
-                android:inputType="textEmailAddress"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textSize="@dimen/fab_margin"
-                tools:ignore="LabelFor" />
+                android:layout_marginTop="20dp"
+                app:hintTextAppearance="@style/MyAppearance">
 
-            <requestFocus />
-        </android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:id="@+id/child_register_password_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="@string/password_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edit_text_size" />
 
-        <TextView
-            android:id="@+id/child_register_TV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/phone_hint"
-            android:textColor="@color/colorPrimaryDark" />
+                <requestFocus />
+            </android.support.design.widget.TextInputLayout>
 
-
-        <com.lamudi.phonefield.PhoneEditText
-            android:id="@+id/child_register_ph_no_ET"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:maxLength="10"
-            android:singleLine="true" />
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            app:hintTextAppearance="@style/MyAppearance">
-
-            <EditText
-                android:id="@+id/child_register_password_ET"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:hint="@string/password_hint"
-                android:inputType="textPassword"
-                android:maxLength="10"
-                android:singleLine="true"
-                android:textSize="@dimen/edit_text_size" />
+                android:layout_marginTop="20dp"
+                app:hintTextAppearance="@style/MyAppearance">
 
-            <requestFocus />
-        </android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:id="@+id/child_register_re_enter_password_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="@string/re_enter_password"
+                    android:inputType="textPassword"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edit_text_size" />
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            app:hintTextAppearance="@style/MyAppearance">
+                <requestFocus />
+            </android.support.design.widget.TextInputLayout>
 
-            <EditText
-                android:id="@+id/child_register_re_enter_password_ET"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/register_child_BTN"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:hint="@string/re_enter_password"
-                android:inputType="textPassword"
-                android:maxLength="10"
-                android:singleLine="true"
-                android:textSize="@dimen/edit_text_size" />
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_corner_button"
+                android:text="@string/register" />
 
-            <requestFocus />
-        </android.support.design.widget.TextInputLayout>
-
-        <Button
-            android:id="@+id/register_child_BTN"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/rounded_corner_button"
-            android:text="@string/register" />
-
-    </LinearLayout>
-
-</RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

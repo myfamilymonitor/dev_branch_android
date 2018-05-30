@@ -9,6 +9,7 @@ public class User implements Serializable {
             Email = "",
             Password = "",
             PhoneNumber = " ",
+            ParentPhoneNumber = "",
             RoleCode = "",
             PhotoPath = "",
             Address = "",

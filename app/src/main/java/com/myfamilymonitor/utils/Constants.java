@@ -55,4 +55,6 @@ public class Constants {
     public static final String NOTIFICATION_FRAGMENT = "Notifications";
 
 
+    public static final String CHILD = "CHILD";
+    public static final String PARENT = "PARENT";
 }

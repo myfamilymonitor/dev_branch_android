@@ -63,6 +63,7 @@ public class DataBaseHelper {
             + "Email" + " TEXT,"
             + "Password" + " TEXT,"
             + "PhoneNumber" + " TEXT,"
+            + "ParentPhoneNumber" + " TEXT,"
             + "RoleCode" + " TEXT,"
             + "PhotoPath" + " TEXT,"
             + "Address" + " TEXT,"
@@ -141,6 +142,7 @@ public class DataBaseHelper {
                 user.Email = c.getString(c.getColumnIndex("Email"));
                 user.Password = c.getString(c.getColumnIndex("Password"));
                 user.PhoneNumber = c.getString(c.getColumnIndex("PhoneNumber"));
+                user.ParentPhoneNumber = c.getString(c.getColumnIndex("ParentPhoneNumber"));
                 user.RoleCode = c.getString(c.getColumnIndex("RoleCode"));
                 user.PhotoPath = c.getString(c.getColumnIndex("PhotoPath"));
                 user.Address = c.getString(c.getColumnIndex("Address"));
@@ -261,7 +263,7 @@ public class DataBaseHelper {
                             messageInfo.putOpt("PhoneNumber", cursor.getString(cursor.getColumnIndex("PhoneNumber")));
                             messageInfo.putOpt("MessageType", cursor.getString(cursor.getColumnIndex("MessageType")));
                             messageInfo.putOpt("SentOrReceivedTime", cursor.getString(cursor.getColumnIndex("SentOrReceivedTime")));
-                            messageInfo.putOpt("MessageDAO", cursor.getString(cursor.getColumnIndex("MessageDAO")));
+                            messageInfo.putOpt("Message", cursor.getString(cursor.getColumnIndex("Message")));
                         }
                         messageInfos.put(messageInfo);
                     }
@@ -470,7 +472,7 @@ public class DataBaseHelper {
 
             values.put("PhoneNumber", logs.PhoneNumber);
             values.put("Address", logs.Address);
-            values.put("MessageDAO", logs.Message);
+            values.put("Message", logs.Message);
             values.put("ReadState", logs.ReadState);
             values.put("Time", logs.Time);
             values.put("MessageType", logs.MessageType);
@@ -666,6 +668,7 @@ public class DataBaseHelper {
             values.put("Email", user.Email);
             values.put("Password", user.Password);
             values.put("PhoneNumber", user.PhoneNumber);
+            values.put("ParentPhoneNumber", user.ParentPhoneNumber);
             values.put("RoleCode", user.RoleCode);
             values.put("PhotoPath", user.PhotoPath);
             values.put("Address", user.Address);
@@ -708,7 +711,7 @@ public class DataBaseHelper {
             values.put("PhoneNumber", messageInfo.PhoneNumber);
             values.put("MessageType", messageInfo.MessageType);
             values.put("SentOrReceivedTime", messageInfo.SentOrReceivedTime);
-            values.put("MessageDAO", messageInfo.Message);
+            values.put("Message", messageInfo.Message);
             if (isExists(TABLE_MESSAGES, "where PhoneNumber = '" + messageInfo.PhoneNumber + "' AND SentOrReceivedTime = '" + messageInfo.SentOrReceivedTime + "'")) {
                 db.update(TABLE_MESSAGES, values, "PhoneNumber = '" + messageInfo.PhoneNumber + "' AND SentOrReceivedTime = '" + messageInfo.SentOrReceivedTime + "'", null);
             } else {

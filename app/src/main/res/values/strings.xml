@@ -47,4 +47,9 @@
     <string name="icon">Icon</string>
     <string name="login">Login</string>
     <string name="invalid_password">Invalid password.</string>
+    <string name="phone_hint_parent">Parent registered phone number</string>
+    <string name="please_enter_parent_phone_number">Please enter parent registered phone number</string>
+    <string name="email_hint_parent">Parent registered Email ID</string>
+    <string name="please_enter_parent_email_id">Please enter parent registered Email ID.</string>
+    <string name="please_enter_valid_email_id">Please enter valid Email ID</string>
 </resources>
